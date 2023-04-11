@@ -108,6 +108,7 @@ header {
     font-size: 93px;
 
     color: #9AD2DE;
+    text-transform: uppercase;
 }
 
 .header-offer p {
@@ -121,6 +122,7 @@ header {
 
 .program {
     margin-top: 143px;
+    margin-bottom: 50px;
 }
 
 .program-offer {
@@ -207,4 +209,55 @@ header {
 .program-btn {
     display: block;
     margin: 0 auto;
+}
+
+.gift {
+    position: relative;
+    padding-top: 270px;
+}
+
+.gift-background {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: auto;
+
+    z-index: 1;
+}
+
+.gift-content {
+    position: relative;
+
+    padding: 90px 0 90px 40px;
+    background: #F2FEFF;
+    border-radius: 10px;
+
+    z-index: 2;
+}
+
+.gift-content p {
+    font-size: 28px;
+    line-height: 33px;
+    width: 400px;
+}
+
+.gift-t-shirt-img {
+    position: absolute;
+
+    top: 190px;
+    right: 175px;
+
+    z-index: 3;
+}
+
+.gift-flag-img {
+    position: absolute;
+
+    top: 280px;
+    right: 140px;
+
+    z-index: 4;
 }
