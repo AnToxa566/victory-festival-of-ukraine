@@ -20,6 +20,20 @@ body {
     margin: 0 auto;
 }
 
+.custome-btn {
+    padding: 0 30px;
+    height: 60px;
+
+    background: #7AE5FD;
+    border-radius: 30px;
+    border: none;
+
+    cursor: pointer;
+
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
 header {
     position: relative;
     background: #F1FDFF;
@@ -55,20 +69,6 @@ header {
 
 .header-nav {
     display: flex;
-}
-
-.header-nav__btn {
-    width: 200px;
-    height: 60px;
-
-    background: #7AE5FD;
-    border-radius: 30px;
-    border: none;
-
-    cursor: pointer;
-
-    font-size: 18px;
-    text-transform: uppercase;
 }
 
 .header-list {
@@ -117,4 +117,94 @@ header {
     padding-bottom: 153px;
 
     line-height: 120%;
+}
+
+.program {
+    margin-top: 143px;
+}
+
+.program-offer {
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+.program-offer h2 {
+    font-size: 60px;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+
+.program-offer p:first-of-type {
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+.program-offer p:last-of-type {
+    line-height: 24px;
+    color: #73A6B1;
+
+    width: 600px;
+    margin: 0 auto;
+}
+
+.program-list {
+    margin-bottom: 60px;
+}
+
+.program-list__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #F1FDFF;
+    border-radius: 10px;
+
+    padding: 40px 40px 70px;
+    margin-bottom: 30px;
+}
+
+.program-list__item:last-child {
+    margin-bottom: 0px;
+}
+
+.program-list__item-offer {
+    margin-bottom: 45px;
+}
+
+.program-list__item-offer h3 {
+    font-size: 46px;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+
+.program-list__item-schedule__event {
+    margin-bottom: 50px;
+}
+
+.program-list__item-schedule__event:last-child {
+    margin-bottom: 0px;
+}
+
+.program-list__item-schedule__event h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.program-list__item-schedule__event p {
+    font-size: 16px;
+    color: #3D8C9D;
+}
+
+.program-list__item img {
+    height: 100%;
+    width: auto;
+
+    border-radius: 10px;
+}
+
+.program-btn {
+    display: block;
+    margin: 0 auto;
 }
