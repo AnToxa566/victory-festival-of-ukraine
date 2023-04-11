@@ -20,7 +20,7 @@ body {
     margin: 0 auto;
 }
 
-.custome-btn {
+.custom-btn {
     padding: 0 30px;
     height: 60px;
 
@@ -213,11 +213,11 @@ header {
 
 .gift {
     position: relative;
-    padding-top: 270px;
+    margin-bottom: 70px;
 }
 
 .gift-background {
-    position: absolute;
+    position: relative;
 
     left: 0;
     top: 0;
@@ -229,7 +229,10 @@ header {
 }
 
 .gift-content {
-    position: relative;
+    position: absolute;
+
+    top: 270px;
+    width: 100%;
 
     padding: 90px 0 90px 40px;
     background: #F2FEFF;
@@ -260,4 +263,49 @@ header {
     right: 140px;
 
     z-index: 4;
+}
+
+.how-to-get {
+    width: 740px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.how-to-get__offer {
+    margin-bottom: 76px;
+}
+
+.how-to-get__offer h2 {
+    font-size: 60px;
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+}
+
+.how-to-get__offer p {
+    line-height: 24px;
+    color: #73A6B1;
+}
+
+.how-to-get__offering {
+    margin-bottom: 68px;
+}
+
+.how-to-get__offering-goal {
+    font-size: 27px;
+    margin-bottom: 24px;
+}
+
+.how-to-get__offering-collected {
+    font-size: 60px;
+    letter-spacing: -0.02em;
+}
+
+.how-to-get__offering-collected span {
+    color: #9AD2DE;
+}
+
+footer {
+    margin-top: 150px;
 }
