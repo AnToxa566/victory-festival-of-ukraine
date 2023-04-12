@@ -58,7 +58,7 @@ header {
     background: #F1FDFF;
 }
 
-.header-img {
+.header__front-img {
     position: absolute;
 
     right: 0;
@@ -69,6 +69,19 @@ header {
     width: auto;
 
     z-index: 3;
+}
+
+.header__back-img {
+    position: absolute;
+
+    right: 0;
+    top: 0;
+
+    height: 110%;
+    width: auto;
+
+    display: block;
+    z-index: 1;
 }
 
 .header-logo {
@@ -332,10 +345,26 @@ header {
 }
 
 footer {
+    position: relative;
+
     margin-top: 150px;
     background: #F9FADF;
 
     padding-bottom: 120px;
+}
+
+.footer__wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+.footer__background-img {
+    position: absolute;
+
+    top: -5%;
+    left: 0;
+
+    z-index: 1;
 }
 
 .contacts {
