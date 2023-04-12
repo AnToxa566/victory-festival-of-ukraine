@@ -10,7 +10,7 @@
     </head>
 
     <body>
-        <header>
+        <header id="header">
             <img src="./assets/img/medium-shot-woman-holding-ukranian-flag.png" alt="Дівчина тримає флаг України" class="header__front-img">
 
             <img src="./assets/img/header-background.png" alt="Крива лінія для фону" class="header__back-img">
@@ -22,17 +22,17 @@
 
                         <nav class="header-nav">
                             <ul class="header-list">
-                                <li>
-                                    <a href="#">Контакти</a>
+                                <li class="header-list__item">
+                                    <a href="#contacts" class="header-list__link">Контакти</a>
                                 </li>
-                                <li>
-                                    <a href="#">Головна</a>
+                                <li class="header-list__item">
+                                    <a href="#header" class="header-list__link">Головна</a>
                                 </li>
-                                <li>
-                                    <a href="#">Програма</a>
+                                <li class="header-list__item">
+                                    <a href="#program" class="header-list__link">Програма</a>
                                 </li>
-                                <li>
-                                    <a href="#" class="custom-btn">Як потрапити</a>
+                                <li class="header-list__item">
+                                    <a href="#how-to-get" class="custom-btn">Як потрапити</a>
                                 </li>
                             </ul>
                         </nav>
@@ -50,7 +50,7 @@
         <main>
             <div class="container__wrapper">
                 <div class="container">
-                    <div class="program">
+                    <div class="program" id="program">
                         <div class="program-offer">
                             <h2>Програма фестивалю</h2>
 
@@ -195,7 +195,7 @@
                             </div>
                         </div>
 
-                        <a href="#" class="custom-btn">Дізнатися більше</a>
+                        <a href="#program" class="custom-btn">Дізнатися більше</a>
                     </div>
                     
                     <div class="gift">
@@ -210,7 +210,7 @@
                         <img src="./assets/img/gift-flag.png" alt="Флаг України" class="gift-flag-img">
                     </div>
 
-                    <div class="how-to-get">
+                    <div class="how-to-get" id="how-to-get">
                         <div class="how-to-get__offer">
                             <h2>Як потрапити</h2>
 
@@ -223,7 +223,7 @@
                             <p class="how-to-get__offering-collected">00 <span>|</span> 230 <span>|</span> 025</p>
                         </div>
 
-                        <a href="#" class="custom-btn">Зробити пожертву</a>
+                        <a href="#how-to-get" class="custom-btn">Зробити пожертву</a>
                     </div>
                 </div>
             </div>
@@ -234,7 +234,7 @@
 
             <div class="container__wrapper footer__wrapper">
                 <div class="container">
-                    <div class="contacts">
+                    <div class="contacts" id="contacts">
                         <div class="contacts__title">
                             <h2>Контакти</h2>
                         </div>
@@ -267,8 +267,8 @@
                             <p class="form__title">Щоб дізнаватися усі новини фестивалю, підпишися на нашу розсилку</p>
 
                             <form action="#" method="post" class="form__fields">
-                                <input type="text" class="form__fields__field" value="Ім'я">
-                                <input type="email" class="form__fields__field" value="Емейл">
+                                <input type="text" name="name" class="form__fields__field" placeholder="Ім'я" required>
+                                <input type="email" name="email" class="form__fields__field" placeholder="Емейл" required>
 
                                 <button class="custom-btn">Підписатися</button>
                             </form>

@@ -1,6 +1,10 @@
 @import url('./reset.css');
 @import url('./fonts.css');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
 
@@ -51,6 +55,14 @@ h2 {
     color: black;
 
     cursor: pointer;
+}
+
+.custom-btn:hover {
+    background: #65dbf6;
+}
+
+.custom-btn:focus {
+    background: #5ccee8;
 }
 
 header {
@@ -108,20 +120,35 @@ header {
     padding: 0;
 }
 
-.header-list li {
+.header-list__item {
     display: flex;
     align-items: center;
     margin-right: 56px;
 }
 
-.header-list li:last-child {
+.header-list__item:last-child {
     margin-right: 0px;
 }
 
-.header-list li a {
+.header-list__link {
     text-decoration: none;
     color: black;
     font-size: 18px;
+}
+
+.header-list__link:after {
+    display: block;
+    content: '';
+
+    border-bottom: solid 1px black; 
+    padding-bottom: 3px;
+    
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+  }
+
+.header-list__link:hover:after {
+    transform: scaleX(1);
 }
 
 .header-offer {
@@ -309,6 +336,7 @@ header {
     max-width: 100%;
 
     margin: 0 auto;
+    
 
     text-align: center;
 }
