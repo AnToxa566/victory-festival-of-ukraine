@@ -18,6 +18,10 @@ h2 {
     text-transform: uppercase;
 }
 
+.container__wrapper {
+    margin: 0 30px;
+}
+
 .container {
     max-width: 1240px;
     width: 100%;
@@ -88,8 +92,6 @@ header {
 
 .header-list {
     display: flex;
-
-    margin-right: 24px;
     padding: 0;
 }
 
@@ -186,6 +188,11 @@ header {
     margin-bottom: 0px;
 }
 
+.program-list__item__left-column {
+    margin-right: 20px;
+    max-width: 45%;
+}
+
 .program-list__item-offer {
     margin-bottom: 45px;
 }
@@ -216,8 +223,8 @@ header {
 }
 
 .program-list__item img {
-    height: 100%;
-    width: auto;
+    max-width: 100%;
+    height: auto;
 
     border-radius: 10px;
 }
@@ -225,6 +232,8 @@ header {
 .gift {
     position: relative;
     margin-bottom: 70px;
+
+    height: 740px;
 }
 
 .gift-background {
@@ -233,8 +242,8 @@ header {
     left: 0;
     top: 0;
 
-    width: 100%;
-    height: auto;
+    max-width: 100%;
+    height: 100%;
 
     z-index: 1;
 }
@@ -245,7 +254,7 @@ header {
     top: 270px;
     width: 100%;
 
-    padding: 90px 0 90px 40px;
+    padding: 90px 0;
     background: #F2FEFF;
     border-radius: 10px;
 
@@ -256,13 +265,15 @@ header {
     font-size: 28px;
     line-height: 33px;
     width: 400px;
+
+    padding-left: 40px;
 }
 
 .gift-t-shirt-img {
     position: absolute;
 
     top: 190px;
-    right: 175px;
+    right: 10%;
 
     z-index: 3;
 }
@@ -271,7 +282,7 @@ header {
     position: absolute;
 
     top: 280px;
-    right: 140px;
+    right: 8%;
 
     z-index: 4;
 }
@@ -282,6 +293,8 @@ header {
     align-items: center;    
 
     width: 740px;
+    max-width: 100%;
+
     margin: 0 auto;
 
     text-align: center;
@@ -332,8 +345,9 @@ footer {
     margin-bottom: 100px;
 }
 
-.contacts h2 {
-    padding-right: 260px;
+.contacts__title {
+    width: 50%;
+    margin-right: 30px;
 }
 
 .contacts__column {
@@ -377,13 +391,17 @@ footer {
 }
 
 .form {
-    max-width: 500px;
+    max-width: 45%;
     margin: auto 0px;
 }
 
+.form__email-img__wrapper {
+    max-width: 45%;
+}
+
 .form__email-img {
-    max-width: 500px;
-    height: fit-content;
+    max-width: 100%;
+    height: auto;
 
     padding-top: 40px;
 }
