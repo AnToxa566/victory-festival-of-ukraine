@@ -63,19 +63,16 @@ h2 {
     }
 }
 
-header {
+.header {
     position: relative;
     background: #F1FDFF;
-}
 
-.header {
     &__front-img {
         position: absolute;
     
         right: 0;
         top: 0;
     
-        display: block;
         height: 100%;
         width: auto;
     
@@ -91,7 +88,6 @@ header {
         height: 110%;
         width: auto;
     
-        display: block;
         z-index: 1;
     }
 
@@ -105,7 +101,7 @@ header {
         display: flex;
         justify-content: space-between;
     
-        padding-top: 63px;
+        padding-top: 60px;
     
         z-index: 4;
     }
@@ -150,6 +146,10 @@ header {
         }
     }
 
+    &-menu {
+        display: none;
+    }
+
     &-offer {
         position: relative;
     
@@ -157,7 +157,7 @@ header {
         z-index: 2;
 
         &__title {
-            width: 700px;
+            width: 50%;
             font-size: 6rem;
 
             color: #9AD2DE;
@@ -166,6 +166,7 @@ header {
 
         &__subtitle {
             width: 480px;
+            max-width: 100%;
 
             margin-top: 64px;
             padding-bottom: 153px;
@@ -190,6 +191,8 @@ header {
 
         text-align: center;
         margin-bottom: 72px;
+
+        max-width: 100%;
 
         &__title {
             margin-bottom: 10px;
@@ -395,6 +398,8 @@ footer {
 
     top: -5%;
     left: 0;
+
+    max-width: 100%;
 
     z-index: 1;
 }

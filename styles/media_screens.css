@@ -1,5 +1,49 @@
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1400px) {
   .header__front-img {
     z-index: 2;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .header__front-img {
+    content: url("../assets/img/small-shot-woman-holding-ukranian-flag.png");
+  }
+}
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 3.125rem;
+  }
+  .header {
+    height: 100vh;
+  }
+  .header__front-img {
+    top: auto;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+  }
+  .header-nav {
+    display: none;
+  }
+  .header-menu {
+    display: block;
+  }
+  .header-offer__title {
+    width: 100%;
+    font-size: 4rem;
+  }
+  .header-offer__subtitle {
+    margin-top: 32px;
+    padding-bottom: 0px;
+  }
+  .program-offer {
+    text-align: start;
+  }
+  .program-offer__body {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header-offer__title {
+    font-size: 3.125rem;
   }
 }/*# sourceMappingURL=media_screens.css.map */
