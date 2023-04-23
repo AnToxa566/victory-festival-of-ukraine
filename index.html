@@ -41,7 +41,7 @@
                     </div>
 
                     <div class="header-offer">
-                        <h1 class="header-offer__title">Фестиваль перемоги України</h1>
+                        <h1 class="header-offer__title bold">Фестиваль перемоги України</h1>
 
                         <p class="header-offer__subtitle">Свято для усіх українців, які працювали, боролися й вірили у перемогу</p>
                     </div>
@@ -267,7 +267,7 @@
                         <div class="form">
                             <p class="form__title">Щоб дізнаватися усі новини фестивалю, підпишися на нашу розсилку</p>
 
-                            <form action="#" method="post" class="form__fields">
+                            <form class="form__fields" id="form">
                                 <input type="text" name="name" class="form__fields__field" placeholder="Ім'я" required>
                                 <input type="email" name="email" class="form__fields__field" placeholder="Емейл" required>
 
@@ -277,6 +277,14 @@
                     </div>
                 </div>
             </div>
-        </footer> 
+        </footer>
+
+        <script>
+            document.getElementById("form").addEventListener("submit", function(e) {
+                e.preventDefault();
+
+                alert("Ви були підписані на розсилку!");
+            })
+        </script>
     </body>
 </html>

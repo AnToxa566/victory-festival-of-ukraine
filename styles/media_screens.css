@@ -1,0 +1,5 @@
+@media screen and (max-width: 1440px) {
+  .header__front-img {
+    z-index: 2;
+  }
+}/*# sourceMappingURL=media_screens.css.map */
