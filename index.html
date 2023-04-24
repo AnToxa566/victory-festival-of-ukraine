@@ -22,7 +22,7 @@
                     <div class="header-top">
                         <img src="./assets/svg/logo.svg" alt="Логотип сайту" class="header-logo">
 
-                        <nav class="header-nav">
+                        <nav class="header-nav" id="header-nav">
                             <ul class="header-list">
                                 <li class="header-list__item">
                                     <a href="#contacts" class="header-list__link">Контакти</a>
@@ -40,7 +40,24 @@
                         </nav>
 
                         <div class="header-menu">
-                            Menu
+                            <img src="./assets/img/menu-icon.png" alt="Меню" class="header-menu__icon" id="header-menu__icon">
+
+                            <nav class="header-menu__nav d-none" id="header-menu__nav">
+                                <ul class="header-menu__nav-list">
+                                    <li class="header-menu__nav-list__item">
+                                        <a href="#contacts" class="header-menu__nav-list__link">Контакти</a>
+                                    </li>
+                                    <li class="header-menu__nav-list__item">
+                                        <a href="#header" class="header-menu__nav-list__link">Головна</a>
+                                    </li>
+                                    <li class="header-menu__nav-list__item">
+                                        <a href="#program" class="header-menu__nav-list__link">Програма</a>
+                                    </li>
+                                    <li class="header-menu__nav-list__item">
+                                        <a href="#how-to-get" class="header-menu__nav-list__link">Як потрапити</a>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
 
@@ -288,7 +305,15 @@
                 e.preventDefault();
 
                 alert("Ви були підписані на розсилку!");
-            })
+            });
+
+            document.getElementById("header-menu__icon").addEventListener("click", function(e) {
+                e.preventDefault();
+
+                let headerMenuNav = document.getElementById("header-menu__nav");
+                
+                headerMenuNav.classList.contains("d-none") ? headerMenuNav.classList.remove("d-none") : headerMenuNav.classList.add("d-none");
+            });
         </script>
     </body>
 </html>
