@@ -59,6 +59,70 @@
                 width: 100%;
             }
         }
+
+        &-list {
+            &__item {
+                padding: 0;
+                flex-direction: column-reverse;
+
+                &__left-column {
+                    margin-right: 0px;
+                    padding: 40px 15px 70px;
+                    max-width: 100%;
+                }
+
+                &__img {
+                    width: 100%;
+
+                    &-wrapper {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        &-btn {
+            display: none;
+        }
+    }
+
+    .gift {
+        height: auto;
+
+        &-background {
+            display: none;
+        }
+
+        &-content {
+            position: relative;
+            top: 0;
+
+            padding: 280px 15px 40px;
+            margin-top: 220px;
+
+            box-sizing: border-box;
+
+            &__body {
+                max-width: 100%;
+                width: auto;
+
+                padding: 0;
+            }
+        }
+
+        &__t-shirt-img {
+            top: -50%;
+
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+        }
+    
+        &__flag-img {
+            top: -25%;
+            right: 10%;
+        }
     }
 }
 
@@ -68,6 +132,12 @@
             &__title {
                 font-size: 3.125rem;
             }
+        }
+    }
+
+    .gift {    
+        &__flag-img {
+            right: 5%;
         }
     }
 }
