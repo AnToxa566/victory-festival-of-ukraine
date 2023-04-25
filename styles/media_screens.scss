@@ -124,6 +124,60 @@
             right: 10%;
         }
     }
+
+    .how-to-get {
+        text-align: start;
+
+        &__offering {
+            text-align: center;
+        }
+    }
+
+    .footer__background-img {
+        display: none;
+    }
+
+    .contacts {
+        flex-direction: column;
+
+        &__title {
+            width: 100%;
+            margin: 0 0 45px;
+        }
+
+        &__column {
+            max-width: 100%;
+        }
+    }
+
+    .form {
+        max-width: 100%;
+
+        &-wrapper {
+            flex-direction: column;
+
+            height: auto;
+
+            padding: 30px;
+        }
+
+        &__email-img {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+    
+            &__wrapper {    
+                margin-bottom: 90px;
+
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+
+        &-btn {
+            width: 100%;
+        }
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -138,6 +192,52 @@
     .gift {    
         &__flag-img {
             right: 5%;
+        }
+    }
+
+    .how-to-get {
+        &__offering {
+            &-collected {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 390px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    .header {
+        &-offer {    
+            &__title {
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    .program {
+        &-offer {
+            &__subtitle {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .gift {
+        &-content {
+            &__body {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .how-to-get {
+        &__offering {
+            &-collected {
+                font-size: 2rem;
+            }
         }
     }
 }

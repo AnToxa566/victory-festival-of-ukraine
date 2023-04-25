@@ -88,6 +88,46 @@
     top: -25%;
     right: 10%;
   }
+  .how-to-get {
+    text-align: start;
+  }
+  .how-to-get__offering {
+    text-align: center;
+  }
+  .footer__background-img {
+    display: none;
+  }
+  .contacts {
+    flex-direction: column;
+  }
+  .contacts__title {
+    width: 100%;
+    margin: 0 0 45px;
+  }
+  .contacts__column {
+    max-width: 100%;
+  }
+  .form {
+    max-width: 100%;
+  }
+  .form-wrapper {
+    flex-direction: column;
+    height: auto;
+    padding: 30px;
+  }
+  .form__email-img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+  .form__email-img__wrapper {
+    margin-bottom: 90px;
+    max-width: 100%;
+    width: 100%;
+  }
+  .form-btn {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 576px) {
   .header-offer__title {
@@ -95,5 +135,25 @@
   }
   .gift__flag-img {
     right: 5%;
+  }
+  .how-to-get__offering-collected {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 390px) {
+  h2 {
+    font-size: 2rem;
+  }
+  .header-offer__title {
+    font-size: 2.5rem;
+  }
+  .program-offer__subtitle {
+    font-size: 1.5rem;
+  }
+  .gift-content__body {
+    font-size: 1.5rem;
+  }
+  .how-to-get__offering-collected {
+    font-size: 2rem;
   }
 }/*# sourceMappingURL=media_screens.css.map */

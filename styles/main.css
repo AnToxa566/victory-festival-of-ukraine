@@ -270,12 +270,14 @@ h2 {
   position: absolute;
   top: 190px;
   right: 10%;
+  max-width: 100%;
   z-index: 3;
 }
 .gift__flag-img {
   position: absolute;
   top: 280px;
   right: 8%;
+  max-width: 100%;
   z-index: 4;
 }
 
