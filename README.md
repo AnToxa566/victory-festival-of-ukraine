@@ -13,4 +13,4 @@
 * CSS
 
 ## Автор
-Сайт був розроблений https://antoxa566.github.io/
+Сайт був розроблений https://antoxa566.github.io/resume
